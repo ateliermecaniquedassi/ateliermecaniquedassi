@@ -38,66 +38,31 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-.blog-container,
-.gallery-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-}
-.services, .contact, .news, .blog-posts, .sidebar, .gallery-item {
+.services, .contact, .news, .gallery-container, .blog-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
-.gallery-item {
+.gallery-container, .blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.gallery-item, .blog-post {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-.gallery-item:hover {
+.gallery-item:hover, .blog-post:hover {
   transform: scale(1.05);
 }
-.gallery-item img,
-.featured-image {
+.gallery-item img, .blog-post img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 15px;
-}
-.blog-post {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
-}
-.blog-post:last-child {
-  border-bottom: none;
-}
-.blog-post h2 {
-  color: #1a1a1a;
-}
-.blog-post .date {
-  color: #777;
-  font-style: italic;
-}
-.sidebar h3 {
-  border-bottom: 2px solid #1a1a1a;
-  padding-bottom: 10px;
-}
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-.sidebar ul li {
-  margin-bottom: 10px;
-}
-.sidebar ul li a {
-  color: #333;
-  text-decoration: none;
-}
-.sidebar ul li a:hover {
-  color: #1a1a1a;
-  text-decoration: underline;
 }
 .filter-buttons {
   display: flex;
@@ -119,4 +84,11 @@ nav ul li a {
 }
 .filter-button.active {
   background-color: #1a1a1a;
+}
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin-top: 30px;
 }
