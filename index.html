@@ -1,0 +1,165 @@
+<html><head><base href="https://www.atelierDassi-mecanique-moto.github.io">
+<title>Atelier Dassi - Mécanique Moto</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+  .services, .contact, .news {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  .motorcycle-animation {
+    width: 100px;
+    height: 60px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><path d="M20 40 Q30 20 40 40 Q50 60 60 40 Q70 20 80 40" stroke="black" fill="none" stroke-width="2"/><circle cx="30" cy="50" r="10" fill="black"/><circle cx="70" cy="50" r="10" fill="black"/></svg>') no-repeat;
+    animation: drive 2s linear infinite;
+  }
+  @keyframes drive {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100%); }
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Atelier Dassi</h1>
+    <p>Mécanique Moto de Précision</p>
+    <div class="motorcycle-animation"></div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#services">Nos Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/galerie">Galerie</a></li>
+      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div>
+      <section class="services" id="services">
+        <h2>Nos Services</h2>
+        <ul>
+          <li>Réparation et entretien de motos classiques et modernes</li>
+          <li>Restauration de motos vintage</li>
+          <li>Personnalisation et customisation</li>
+          <li>Diagnostic électronique avancé</li>
+          <li>Réglage de suspension sur mesure</li>
+          <li>Préparation pour courses et rallyes</li>
+        </ul>
+        <p>Chez Atelier Dassi, nous combinons expertise technique et passion pour la moto. Notre équipe de mécaniciens qualifiés utilise les dernières technologies pour assurer des réparations de haute qualité et un service personnalisé.</p>
+      </section>
+
+      <section class="news">
+        <h2>Actualités</h2>
+        <article>
+          <h3>Nouveau Service : Diagnostic Électronique Avancé</h3>
+          <p>Nous sommes fiers d'annoncer l'acquisition d'un équipement de diagnostic électronique de dernière génération. Ce nouvel outil nous permet de diagnostiquer rapidement et précisément les problèmes sur les motos modernes équipées de systèmes électroniques complexes.</p>
+        </article>
+        <article>
+          <h3>Préparation pour le Grand Paris Dakar Classic</h3>
+          <p>L'Atelier Dassi est en pleine effervescence ! Nous préparons actuellement une Yamaha XT600Z Ténéré de 1983 pour le prochain Grand Paris Dakar Classic. Suivez l'avancement de ce projet passionnant sur notre blog.</p>
+        </article>
+      </section>
+
+      <section class="gallery">
+        <img src="https://example.com/moto1.jpg" alt="Restauration d'une moto vintage" width="300" height="200">
+        <img src="https://example.com/moto2.jpg" alt="Customisation d'une moto moderne" width="300" height="200">
+        <img src="https://example.com/moto3.jpg" alt="Préparation d'une moto de course" width="300" height="200">
+      </section>
+    </div>
+
+    <div>
+      <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>📍 123 Rue de la Mécanique, 75001 Paris</p>
+        <p>📞 +33 1 23 45 67 89</p>
+        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="583b37362c393b2c18392c3d34313d2a3c392b2b3135372c37763e2a">[email&#160;protected]</a></p>
+        <form action="https://www.atelierDassi-mecanique-moto.github.io/submit-form" method="POST">
+          <input type="text" name="name" placeholder="Votre nom" required><br>
+          <input type="email" name="email" placeholder="Votre email" required><br>
+          <textarea name="message" placeholder="Votre message" required></textarea><br>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+
+      <section class="hours">
+        <h2>Horaires d'ouverture</h2>
+        <ul>
+          <li>Lundi - Vendredi : 8h00 - 20h00</li>
+          <li>Samedi : 8h00 - 18h00</li>
+          <li>Dimanche : Fermé</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Atelier Dassi - Mécanique Moto. Tous droits réservés.</p>
+    <p>Suivez-nous sur <a href="https://www.instagram.com/atelierdassimoto">Instagram</a> et <a href="https://www.facebook.com/atelierdassimoto">Facebook</a></p>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Merci pour votre message ! Nous vous contacterons bientôt.');
+    });
+  </script>
+</body></html>

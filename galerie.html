@@ -1,0 +1,177 @@
+<html><head><base href="https://www.atelierDassi-mecanique-moto.github.io/galerie">
+<title>Galerie - Atelier Dassi Mécanique Moto</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  nav {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .gallery-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .gallery-item .caption {
+    padding: 10px;
+    text-align: center;
+  }
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .filter-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .filter-button:hover {
+    background-color: #555;
+  }
+  .filter-button.active {
+    background-color: #1a1a1a;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Galerie Atelier Dassi</h1>
+    <p>Nos Plus Belles Réalisations</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="https://www.atelierDassi-mecanique-moto.github.io">Accueil</a></li>
+      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/blog">Blog</a></li>
+      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="filter-buttons">
+    <button class="filter-button active" data-filter="all">Tout</button>
+    <button class="filter-button" data-filter="restauration">Restaurations</button>
+    <button class="filter-button" data-filter="customisation">Customisations</button>
+    <button class="filter-button" data-filter="preparation">Préparations Course</button>
+  </div>
+
+  <div class="gallery-container">
+    <div class="gallery-item" data-category="restauration">
+      <img src="https://example.com/moto1.jpg" alt="Restauration d'une Honda CB750 de 1969" width="250" height="200">
+      <div class="caption">Restauration Honda CB750 (1969)</div>
+    </div>
+    <div class="gallery-item" data-category="customisation">
+      <img src="https://example.com/moto2.jpg" alt="Customisation d'une Triumph Bonneville" width="250" height="200">
+      <div class="caption">Customisation Triumph Bonneville</div>
+    </div>
+    <div class="gallery-item" data-category="preparation">
+      <img src="https://example.com/moto3.jpg" alt="Préparation Yamaha XT600Z Ténéré pour le Paris-Dakar Classic" width="250" height="200">
+      <div class="caption">Préparation Yamaha XT600Z Ténéré (Paris-Dakar Classic)</div>
+    </div>
+    <div class="gallery-item" data-category="restauration">
+      <img src="https://example.com/moto4.jpg" alt="Restauration d'une Vespa 150 de 1963" width="250" height="200">
+      <div class="caption">Restauration Vespa 150 (1963)</div>
+    </div>
+    <div class="gallery-item" data-category="customisation">
+      <img src="https://example.com/moto5.jpg" alt="Customisation d'une Harley-Davidson Sportster en Café Racer" width="250" height="200">
+      <div class="caption">Harley-Davidson Sportster Café Racer</div>
+    </div>
+    <div class="gallery-item" data-category="preparation">
+      <img src="https://example.com/moto6.jpg" alt="Préparation Ducati Panigale V4R pour le championnat Superbike" width="250" height="200">
+      <div class="caption">Préparation Ducati Panigale V4R (Superbike)</div>
+    </div>
+    <div class="gallery-item" data-category="restauration">
+      <img src="https://example.com/moto7.jpg" alt="Restauration d'une BMW R75/5 de 1971" width="250" height="200">
+      <div class="caption">Restauration BMW R75/5 (1971)</div>
+    </div>
+    <div class="gallery-item" data-category="customisation">
+      <img src="https://example.com/moto8.jpg" alt="Customisation d'une Royal Enfield Classic 500 en Scrambler" width="250" height="200">
+      <div class="caption">Royal Enfield Classic 500 Scrambler</div>
+    </div>
+    <div class="gallery-item" data-category="preparation">
+      <img src="https://example.com/moto9.jpg" alt="Préparation KTM 450 Rally pour le Rallye du Maroc" width="250" height="200">
+      <div class="caption">Préparation KTM 450 Rally (Rallye du Maroc)</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Atelier Dassi - Mécanique Moto. Tous droits réservés.</p>
+    <p>Suivez-nous sur <a href="https://www.instagram.com/atelierdassimoto">Instagram</a> et <a href="https://www.facebook.com/atelierdassimoto">Facebook</a></p>
+  </footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body></html>
