@@ -8,7 +8,7 @@ body {
   background-color: #f5f5f5;
 }
 header {
-  background-color: #ff6600;
+  background-color: #003366; /* Teinte de bleu foncé professionnel */
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -19,7 +19,7 @@ h1 {
   margin-bottom: 10px;
 }
 nav {
-  background-color: #ff6600;
+  background-color: #003366; /* Teinte de bleu foncé professionnel */
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -83,17 +83,17 @@ nav ul li a {
   background-color: #555;
 }
 .filter-button.active {
-  background-color: #1a1a1a;
+  background-color: #003366; /* Teinte de bleu foncé professionnel */
 }
 .footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #ff6600;
+  background-color: #003366; /* Teinte de bleu foncé professionnel */
   color: #fff;
   margin-top: 30px;
 }
 .service-icon {
-  width: 50px;
+  width: 30px; /* Reduire la taille de l'icône */
   height: auto;
   vertical-align: middle;
   margin-right: 10px;
