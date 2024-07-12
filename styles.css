@@ -8,7 +8,7 @@ body {
   background-color: #f5f5f5;
 }
 header {
-  background-color: #1a1a1a;
+  background-color: #003366; /* Bleu foncé professionnel */
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -19,7 +19,7 @@ h1 {
   margin-bottom: 10px;
 }
 nav {
-  background-color: #333;
+  background-color: #00509e; /* Bleu légèrement plus clair pour le contraste */
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -70,7 +70,7 @@ nav ul li a {
   margin-bottom: 20px;
 }
 .filter-button {
-  background-color: #333;
+  background-color: #00509e; /* Même bleu que la barre de navigation */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -80,16 +80,15 @@ nav ul li a {
   transition: background-color 0.3s ease;
 }
 .filter-button:hover {
-  background-color: #555;
+  background-color: #0073e6; /* Bleu plus clair pour l'effet de survol */
 }
 .filter-button.active {
-  background-color: #1a1a1a;
+  background-color: #003366; /* Correspondance avec l'en-tête */
 }
 .footer {
   text-align: center;
   padding: 20px 0;
-  background-color: #1a1a1a;
+  background-color: #003366; /* Correspondance avec l'en-tête */
   color: #fff;
   margin-top: 30px;
 }
- 
