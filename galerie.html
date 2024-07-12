@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galerie - Atelier Dassi Mécanique Moto</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Inclure Bootstrap CSS pour le carousel -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <header>
-    <h1>Galerie Atelier Dassi</h1>
+    <h1>Galerie Atelier Edmond Dassi</h1>
     <p>Nos Plus Belles Réalisations</p>
   </header>
   
@@ -20,38 +22,62 @@
     </ul>
   </nav>
 
-  <div class="filter-buttons">
-    <button class="filter-button active" data-filter="all">Tout</button>
-    <button class="filter-button" data-filter="restauration">Restaurations</button>
-    <button class="filter-button" data-filter="customisation">Customisations</button>
-    <button class="filter-button" data-filter="preparation">Préparations Course</button>
-  </div>
-
-  <div class="gallery-container">
-    <div class="gallery-item" data-category="restauration">
-      <img src="https://fr.made-in-china.com/co_5d857df1e4584fc8/product_Motorcycle-Hot-Sale-Africa-Market-Sy125-8-Sanya_eooegoyry.jpg" alt="Restauration d'une moto Sanya SY125-8">
-      <div class="caption">Réparation Moto Sanya SY125-8</div>
+  <!-- Ajout du carousel d'images -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="files/photos/IMG5.png" class="d-block w-100" alt="Réparation d'une moto Sanya">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Réparation d'une moto Sanya</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/photos/IMG6.png" class="d-block w-100" alt="Customisation Sanili">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Customisation Sanili</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/photos/IMG7.png" class="d-block w-100" alt="Réparation d'une moto TVS">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Réparation d'une moto TVS</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/photos/IMG8.png" class="d-block w-100" alt="Restauration d'une moto Vespa">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Restauration d'une moto Vespa</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/photos/IMG9.png" class="d-block w-100" alt="Customisation d'une moto Mate">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Customisation d'une moto Mate</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="files/photos/IMG10.png" class="d-block w-100" alt="Réparation d'une moto Bebe CT">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Réparation d'une moto Bebe CT</h5>
+        </div>
+      </div>
     </div>
-    <div class="gallery-item" data-category="customisation">
-      <img src="https://cm.coinafrique.com/categorie/motos-et-scooters/sanili.jpg" alt="Customisation d'une moto Sanili">
-      <div class="caption">Customisation Sanili</div>
-    </div>
-    <div class="gallery-item" data-category="preparation">
-      <img src="https://example.com/moto3.jpg" alt="Préparation d'une moto TVS">
-      <div class="caption">Réparation TVS</div>
-    </div>
-    <div class="gallery-item" data-category="restauration">
-      <img src="https://example.com/moto4.jpg" alt="Restauration d'une moto Vespa">
-      <div class="caption">Réparation Vespa</div>
-    </div>
-    <div class="gallery-item" data-category="customisation">
-      <img src="https://example.com/moto5.jpg" alt="Customisation d'une moto Mate">
-      <div class="caption">Customisation Moto Mate</div>
-    </div>
-    <div class="gallery-item" data-category="preparation">
-      <img src="https://example.com/moto6.jpg" alt="Préparation d'une moto Bebe CT">
-      <div class="caption">Mobylette - Cyclomoteur Peugeot BB CT</div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
   </div>
 
   <footer class="footer">
@@ -59,26 +85,9 @@
     <p>Suivez-nous sur <a href="https://www.instagram.com/atelierdassimoto">Instagram</a> et <a href="https://www.facebook.com/atelierdassimoto">Facebook</a></p>
   </footer>
 
-  <script>
-    const filterButtons = document.querySelectorAll('.filter-button');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-
-        galleryItems.forEach(item => {
-          if (filter === 'all' || item.getAttribute('data-category') === filter) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-  </script>
+  <!-- Inclure Bootstrap JS pour le carousel -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
