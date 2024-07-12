@@ -1,80 +1,8 @@
-<html><head><base href="https://www.atelierDassi-mecanique-moto.github.io">
-<title>Atelier Dassi - Mécanique Moto</title>
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-  }
-  header {
-    background-color: #1a1a1a;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 30px;
-  }
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  nav {
-    background-color: #333;
-    padding: 10px;
-  }
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  nav ul li {
-    margin: 0 15px;
-  }
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-  }
-  .services, .contact, .news {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-  }
-  .motorcycle-animation {
-    width: 100px;
-    height: 60px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60"><path d="M20 40 Q30 20 40 40 Q50 60 60 40 Q70 20 80 40" stroke="black" fill="none" stroke-width="2"/><circle cx="30" cy="50" r="10" fill="black"/><circle cx="70" cy="50" r="10" fill="black"/></svg>') no-repeat;
-    animation: drive 2s linear infinite;
-  }
-  @keyframes drive {
-    0% { transform: translateX(-100px); }
-    100% { transform: translateX(100%); }
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .gallery img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-</style>
+<html>
+<head>
+  <base href="https://ateliermecaniquedassi.github.io">
+  <title>Atelier Dassi - Mécanique Moto</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -87,8 +15,8 @@
     <ul>
       <li><a href="#services">Nos Services</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/galerie">Galerie</a></li>
-      <li><a href="https://www.atelierDassi-mecanique-moto.github.io/blog">Blog</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
 
@@ -104,7 +32,7 @@
           <li>Réglage de suspension sur mesure</li>
           <li>Préparation pour courses et rallyes</li>
         </ul>
-        <p>Chez Atelier Dassi, nous combinons expertise technique et passion pour la moto. Notre équipe de mécaniciens qualifiés utilise les dernières technologies pour assurer des réparations de haute qualité et un service personnalisé.</p>
+        <p>Chez Atelier Dassi, nous combinons expertise technique et passion pour la moto. Notre équipe de mécaniciens qualifiés utilise les dernières technologies pour assurer des réparations de haute qualité et un service personnalisé. Avec plus de 30 ans d'expérience, nous sommes la référence pour la réparation de toute moto 2 temps et 4 temps conduite depuis des générations.</p>
       </section>
 
       <section class="news">
@@ -129,10 +57,10 @@
     <div>
       <section class="contact" id="contact">
         <h2>Contactez-nous</h2>
-        <p>📍 123 Rue de la Mécanique, 75001 Paris</p>
-        <p>📞 +33 1 23 45 67 89</p>
-        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="583b37362c393b2c18392c3d34313d2a3c392b2b3135372c37763e2a">[email&#160;protected]</a></p>
-        <form action="https://www.atelierDassi-mecanique-moto.github.io/submit-form" method="POST">
+        <p>📍 Commune de Zè, Bénin</p>
+        <p>📞 +229 97981218</p>
+        <p>✉️ <a href="mailto:dassiedmond@gmail.com">dassiedmond@gmail.com</a></p>
+        <form action="https://ateliermecaniquedassi.github.io/submit-form" method="POST">
           <input type="text" name="name" placeholder="Votre nom" required><br>
           <input type="email" name="email" placeholder="Votre email" required><br>
           <textarea name="message" placeholder="Votre message" required></textarea><br>
@@ -156,10 +84,11 @@
     <p>Suivez-nous sur <a href="https://www.instagram.com/atelierdassimoto">Instagram</a> et <a href="https://www.facebook.com/atelierdassimoto">Facebook</a></p>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault();
       alert('Merci pour votre message ! Nous vous contacterons bientôt.');
     });
   </script>
-</body></html>
+</body>
+</html>
